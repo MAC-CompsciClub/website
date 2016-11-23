@@ -51,20 +51,17 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <?php 
+	  
+	  include 'nav_bar.php';
+  
+  ?>
   <div class="container">
     <section class="header">
-      <h2 class="title"> This is a title </h2>
-      
-      	<form action="<?php echo $buttonRef; ?>"> 
-	  		<input type="submit" value="<?php echo $buttonText; ?>" />
-	  
-	  	</form>
-	  
-      
-</form>
+      <h2 class="title"> Computer Science Club </h2>
     </section>
       <div class="docs-section">
-        <h2 class="docs-header">Test post</h2>
+        <h2 class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
         
         <p>This is a test of the soon-to-be homepage of the SJAM Compsci Club. I mostly ripped the CSS elements from the Skeleton main website.
           If you have the time, please go to the <a href="http://www.getskeleton.com">Skeleton documentation</a>.
