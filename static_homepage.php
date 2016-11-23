@@ -35,6 +35,11 @@
   <div class="container">
     <section class="header">
       <h2 class="title"> This is a title </h2>
+      <form action="admin_login.php">
+	  		<input type="submit" value="Admin Login" />
+	  </form>
+      
+</form>
     </section>
       <div class="docs-section">
         <h2 class="docs-header">Test post</h2>
