@@ -47,6 +47,11 @@
 	</head>
 	
 	<body>
+		  <?php 
+	  
+			  include 'nav_bar.php';
+  
+  			?>
 		<div align="center">
 		<h1 >Administrator Login</h1>
 		 <form action="admin_login.php" method="POST">
@@ -59,7 +64,7 @@
 			  <input type="password" name="password" placeholder="Enter password">
 			 </p>
 
-	  		<input type="submit" value="Sumbit" />
+	  		<input type="submit" value="LOGIN" />
 	  	</form>
 		</div>
 	</body>
