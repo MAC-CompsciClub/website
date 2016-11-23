@@ -15,6 +15,7 @@ This is the official repository for the MCC website.
 Please feel free to add/edit whatever you think is right.
 
 ## simple todo stuff
+ * Implement dock at the top of the pages, to make navigation between pages easier.
  * the png image for the favicon is too high-quality. Someone change it to a lower resolution. (does this even matter though? oh well, do it any way, lol.)
  * Once we have the official favicon for the website, someone please change it.
 
