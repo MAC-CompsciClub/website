@@ -28,7 +28,7 @@
   <meta charset="utf-8">
   <title>Mac Compsci Club</title>
   <meta name="description" content="This is the main page for the Macdonald Computer Science Club.">
-  <meta name="author" content="Jack Wang & The Compsci Club">
+  <meta name="author" content="Jack Wang + Hamza Saleem & The Compsci Club">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
