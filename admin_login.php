@@ -1,21 +1,34 @@
 <?php
 	
-	if (empty($_POST["username"]) && empty($POST["password"])){
+	session_start();
+	
+	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true)
+	{
+		header("Location: admin_page.php", true, 301);
+		die();
+		
+	}
+	
+	if (empty($_POST["username"]) && empty($_POST["password"])){
 		
 	} //check if they just loaded page, POST will throw an error since it has no value
 	
 	else{
-	$username = $_POST["username"];
-	$password = $_POST["password"];
+		$username = $_POST["username"];
+		$password = $_POST["password"];
 	
-	if ($username == "admin" && $password == "password"){
-		
-		header("Location: admin_page.php", true, 301);
-		die();
-	}
-	else{
-		echo"Incorrect password";
-	}
+		if ($username == "admin" && $password == "password"){
+			
+			$_SESSION['isAdmin'] = true; //make them an admin
+			
+			header("Location: admin_page.php", true, 301);
+			die();
+		}
+		else{
+			echo"Incorrect password";
+			$_SESSION['isAdmin'] = false;
+			session_destroy();
+		}
 	}
 	
 	
