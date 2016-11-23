@@ -1,3 +1,22 @@
+<?php
+	
+	session_start();
+	
+	
+	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
+		echo "welcome admin";
+		
+		$buttonText = "ADMIN PAGE"; 
+		$buttonRef = "admin_page.php";
+		
+	}
+	else{
+		$buttonText = "ADMIN LOGIN";
+		$buttonRef = "admin_login.php";
+	}
+	
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,7 +28,7 @@
   <meta charset="utf-8">
   <title>Mac Compsci Club</title>
   <meta name="description" content="This is the main page for the Macdonald Computer Science Club.">
-  <meta name="author" content="The Compsci Club">
+  <meta name="author" content="Jack Wang & The Compsci Club">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,9 +54,12 @@
   <div class="container">
     <section class="header">
       <h2 class="title"> This is a title </h2>
-      <form action="admin_login.php">
-	  		<input type="submit" value="Admin Login" />
-	  </form>
+      
+      	<form action="<?php echo $buttonRef; ?>">
+	  		<input type="submit" value="<?php echo $buttonText; ?>" />
+	  
+	  	</form>
+	  
       
 </form>
     </section>
