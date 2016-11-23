@@ -8,8 +8,7 @@
 		
 	}
 	else{
-		echo "gtfo";
-		
+				
 		header("Location: static_homepage.php", true, 301);
 		die();
 	}
