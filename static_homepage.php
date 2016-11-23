@@ -1,4 +1,4 @@
-<?php
+	<?php
 	
 	session_start();
 	
@@ -6,7 +6,7 @@
 	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
 		echo "welcome admin";
 		
-		$buttonText = "ADMIN PAGE"; 
+		$buttonText = "ADMIN PAGE";  //Variables for the button ID
 		$buttonRef = "admin_page.php";
 		
 	}
@@ -55,7 +55,7 @@
     <section class="header">
       <h2 class="title"> This is a title </h2>
       
-      	<form action="<?php echo $buttonRef; ?>">
+      	<form action="<?php echo $buttonRef; ?>"> 
 	  		<input type="submit" value="<?php echo $buttonText; ?>" />
 	  
 	  	</form>
