@@ -23,8 +23,13 @@
 	</head>
 	
 	<body>
-		<h1>Admin page!</h1>
-	<form action="admin_logout.php">
+		  <?php 
+	  
+			  include 'nav_bar.php';
+  
+  		?>
+		<h1 align="center">Admin page</h1>
+	<form align="center"action="admin_logout.php">
 	  		<input type="submit" value="Logout" />
 	  </form>
 	</body>
