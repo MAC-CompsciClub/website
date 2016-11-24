@@ -2,14 +2,6 @@
 
 <?php
 
-	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] != true)
-	{
-		
-		session_destroy();
-	}
-	else{
-		
-	}
 ?>
 
 <html>
@@ -29,18 +21,16 @@
 				
 				<?php if (!isset($_SESSION['isAdmin']))
 					{
-						echo "<li><a href = 'admin_login.php'>Admin Login</a></li>";
-						echo "<li class='leftpad' style='float:right'><a href=''>LOGIN FORM HERE</a></li>";
-						//Only make this button visible if the user is an admin
-						
+						echo "<li><a href = 'admin_login.php'>Admin Login</a></li>"; //Only make this button visible if the user is an admin
 					}
 				?>
-
+				
+				
+				
+				
 				<?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true)
 					{
-						echo "<li><a href = 'admin_page.php'>Admin Page</a></li>"; 
-						echo "<li class='leftpad' style='float:right'><a href=''>HELLO ADMIN</a></li>";
-						//Only make this button visible if the user is an admin
+						echo "<li><a href = 'admin_page.php'>Admin Page</a></li>"; //Only make this button visible if the user is an admin
 					}
 				?>
 			</ul>
