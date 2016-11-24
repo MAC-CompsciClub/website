@@ -1,6 +1,6 @@
 <?php 
 	  
-	include ('nav_bar.php');
+
 	require("database.php");	
   
 ?>
@@ -14,7 +14,6 @@
 	
 	
 	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
-		echo "welcome admin";
 		
 		$buttonText = "ADMIN PAGE";  //Variables for the button ID
 		$buttonRef = "admin_page.php";
@@ -60,14 +59,17 @@
   
 <body>
   <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div class="container">
-    <section class="header">
-      <h2 class="title"> Computer Science Club </h2>
-    </section>
-      <div class="docs-section">
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
+  <?php  
+	  
+	  include ('nav_bar.php'); 
+	  
+  ?>
+  	<div>
+        
+        <h1 align="center">Computer Science Club</h1>
         <h2 align="center" class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
+		
 		<?php
         	$sql = "SELECT POSTID, postTitle, postDate, postAuthor, postBody FROM postdata";
 	
@@ -108,9 +110,7 @@
 					echo "no results";
 				}
 		?>
-      </div>
-
-  </div>
+    </div>
   
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

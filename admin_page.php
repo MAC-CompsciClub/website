@@ -1,8 +1,3 @@
-<?php 
-	  
-	include 'nav_bar.php';
-  
-?>
 
 <?php
 	
@@ -10,7 +5,6 @@
 
 	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true)
 	{
-		echo "you're an admin";
 		
 	}
 	else{
@@ -23,17 +17,25 @@
 <!DOCTYPE html>
 
 <html lang = "en">
+	<?php include 'nav_bar.php'; ?>
 	
 	<head>
 		<title>Welcome to the admin page</title>
 	</head>
 	
 	<body>
+	
+		<div id = "page-container">
 		
-		<h1 align="center">Admin page</h1>
-	<form align="center"action="admin_logout.php">
-	  		<input type="submit" value="Logout" />
-	  </form>
+			<h1 align="center">Admin page</h1>
+		
+			<form align="center"action="admin_logout.php">
+	  			<input type="submit" value="Logout" />
+	  		</form>
+	  	
+		</div>
+	
 	</body>
+	
 	
 </html>

@@ -1,9 +1,15 @@
-/*This CSS belongs to the nav_bar.php file*/
 
-.nav_bar{
-	margin: 0;
+body{
+	margin-top: 50px;
+	height: 2000px;
 }
 
+  
+#page-container {
+    padding: 20px;
+    margin-top: 30px;
+    height: 2000px;
+}
 .navbar{ 
 	list-style-type: none;
 	margin: 0;
@@ -13,17 +19,18 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	white-space:nowrap;
 	
 }
 
-.nav_bar li{
+.navbar li{
 	display: inline;
 	float: left;
 	margin: 0;
 
 }
 
-.nav_bar li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,17 +40,20 @@
     text-decoration: none;
  }
  
- .nav_bar a:hover { 
+ .navbar a:hover { 
 	
 	background-color: rgb(64,64,64);
 }
 
 .post{
+	margin: 50px;
 	background-color: white;
 	padding: 10px 20px;
 	outline: solid;
 	outline-color: black;
-	outline-width: 2px;
+	outline-width: 1px;
+	outline-color: gray;
+	outline-offset: 10px;
 	
 }
 
@@ -61,14 +71,6 @@
 	margin: 0;
 }
 
-.container {
-    max-width: 960px; 
-}
-
-.header {
-    margin-top: 4rem;
-    text-align: center;
-}
 
 .value-prop {
     margin-top: 1rem; 
@@ -85,9 +87,3 @@
     letter-spacing: .2rem;
     font-weight: 500; 
  }
-  
-.docs-section {
-    border-top: 1px solid #eee;
-    padding: 4rem 0;
-    margin-bottom: 0;}
-}
