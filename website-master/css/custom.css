@@ -5,7 +5,7 @@
 }
 
 .spacer{
-	margin: 70px;
+	margin: 50px;
 }
 .navbar{ 
 	list-style-type: none;
@@ -30,16 +30,12 @@
     display: block;
     color: white;
     text-align: center;
+   
     padding: 14px 16px;
     padding-bottom: 10px;
     text-decoration: none;
  }
  
-.nav_bar .leftpad
-{
-	padding-right: 25px;
-}
-
  .nav_bar a:hover { 
 	
 	background-color: rgb(64,64,64);
