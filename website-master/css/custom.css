@@ -1,0 +1,73 @@
+/*This CSS belongs to the nav_bar.php file*/
+
+.nav_bar{
+	margin: 0;
+}
+
+.spacer{
+	margin: 50px;
+}
+.navbar{ 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(50,50,50);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
+
+.nav_bar li{
+	display: inline;
+	float: left;
+	margin: 0;
+
+}
+
+.nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+   
+    padding: 14px 16px;
+    padding-bottom: 10px;
+    text-decoration: none;
+ }
+ 
+ .nav_bar a:hover { 
+	
+	background-color: rgb(64,64,64);
+}
+
+.container {
+    max-width: 960px; 
+}
+
+.header {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.value-prop {
+    margin-top: 1rem; 
+}
+
+.value-props {
+    margin-top: 4rem;
+    margin-bottom: 4rem; 
+ }
+ 
+.docs-header {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    font-weight: 500; 
+ }
+  
+.docs-section {
+    border-top: 1px solid #eee;
+    padding: 4rem 0;
+    margin-bottom: 0;}
+}
