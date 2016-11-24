@@ -53,7 +53,7 @@
   
   			?>
 		<div align="center">
-		<h1 >Administrator Login</h1>
+		<h2 >Administrator Login</h2>
 		 <form action="admin_login.php" method="POST">
 			 <p>
 			  <input type="text" name="username" placeholder="Enter username">

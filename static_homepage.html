@@ -1,22 +1,3 @@
-<?php
-	
-	session_start();
-	
-	
-	if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == true){
-		echo "welcome admin";
-		
-		$buttonText = "ADMIN PAGE";  //Variables for the button ID
-		$buttonRef = "admin_page.php";
-		
-	}
-	else{
-		$buttonText = "ADMIN LOGIN";
-		$buttonRef = "admin_login.php";
-	}
-	
-?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -28,7 +9,7 @@
   <meta charset="utf-8">
   <title>Mac Compsci Club</title>
   <meta name="description" content="This is the main page for the Macdonald Computer Science Club.">
-  <meta name="author" content="Jack Wang + Hamza Saleem & The Compsci Club">
+  <meta name="author" content="Jack Wang & The Compsci Club">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,17 +32,12 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <?php 
-	  
-	  include 'nav_bar.php';
-  
-  ?>
   <div class="container">
     <section class="header">
-      <h1 class="title"> Computer Science Club </h1>
+      <h2 class="title"> This is a title </h2>
     </section>
       <div class="docs-section">
-        <h2 class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
+        <h2 class="docs-header">Test post</h2>
         
         <p>This is a test of the soon-to-be homepage of the SJAM Compsci Club. I mostly ripped the CSS elements from the Skeleton main website.
           If you have the time, please go to the <a href="http://www.getskeleton.com">Skeleton documentation</a>.
