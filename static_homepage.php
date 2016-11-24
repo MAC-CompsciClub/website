@@ -1,4 +1,13 @@
+<?php 
+	  
+	include 'nav_bar.php';
+  
+?>
+
+
 <?php
+	
+	include("database.php");
 	
 	session_start();
 	
@@ -51,14 +60,10 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <?php 
-	  
-	  include 'nav_bar.php';
-  
-  ?>
+
   <div class="container">
     <section class="header">
-      <h1 class="title"> Computer Science Club </h1>
+      <h2 class="title"> Computer Science Club </h2>
     </section>
       <div class="docs-section">
         <h2 class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
