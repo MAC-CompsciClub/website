@@ -1,3 +1,9 @@
+<?php 
+	  
+	include 'nav_bar.php';
+  
+?>
+
 <?php
 	
 	session_start();
@@ -47,13 +53,8 @@
 	</head>
 	
 	<body>
-		  <?php 
-	  
-			  include 'nav_bar.php';
-  
-  			?>
 		<div align="center">
-		<h2 >Administrator Login</h2>
+		<h1 >Administrator Login</h1>
 		 <form action="admin_login.php" method="POST">
 			 <p>
 			  <input type="text" name="username" placeholder="Enter username">
