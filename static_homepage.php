@@ -1,13 +1,14 @@
 <?php 
 	  
-	include 'nav_bar.php';
+	include ('nav_bar.php');
+	require("database.php");	
   
 ?>
 
 
 <?php
 	
-	include("database.php");
+	
 	
 	session_start();
 	
@@ -66,20 +67,47 @@
       <h2 class="title"> Computer Science Club </h2>
     </section>
       <div class="docs-section">
-        <h2 class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
-        
-        <p>This is a test of the soon-to-be homepage of the SJAM Compsci Club. I mostly ripped the CSS elements from the Skeleton main website.
-          If you have the time, please go to the <a href="http://www.getskeleton.com">Skeleton documentation</a>.
-        </p>
-
-        <p>There are still many things to do, they include:
-          <ul>
-            <li>Have JS automatically generate this homepage, so we can have a feed of the most recent posts.</li>
-            <li>Implement a navigational bar at the top. (one of those cool ones that can be both static and dynamic, like on the skeleton website.)</li>
-            <li>FIX: Remove any unnecessary fat from the CSS files. I think the fonts are messed up. (probably because of something I did :> .)
-            <li>Other stuff on the Gitlab readme.</li>                
-          </ul>
-        </p>
+        <h2 align="center" class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
+		<?php
+        	$sql = "SELECT POSTID, postTitle, postDate, postAuthor, postBody FROM postdata";
+	
+			$result = mysqli_query($conn, $sql);
+	
+				if (mysqli_num_rows($result) > 0){
+		
+					while ($row = mysqli_fetch_assoc($result)){
+					
+					$title = $row["postTitle"];
+					$timestamp = $row["postDate"];
+					$author = $row["postAuthor"];
+					$body = $row["postBody"];
+					
+					
+					echo "
+						
+						<div class = 'post'>
+					
+						<h6 id = 'timestamp' align='right'>$timestamp</h6>
+						<h1 id = 'title'>$title</h1>
+						<h5 id = 'author'>by $author</h5> 
+						
+						<p id = 'postbody'>$body</p>
+						
+						
+					
+						
+						</div>
+					
+					
+					
+					";
+			
+					}
+				}
+				else{
+					echo "no results";
+				}
+		?>
       </div>
 
   </div>
