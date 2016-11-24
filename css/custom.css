@@ -4,9 +4,6 @@
 	margin: 0;
 }
 
-.spacer{
-	margin: 70px;
-}
 .navbar{ 
 	list-style-type: none;
 	margin: 0;
@@ -30,19 +27,38 @@
     display: block;
     color: white;
     text-align: center;
+   
     padding: 14px 16px;
     padding-bottom: 10px;
     text-decoration: none;
  }
  
-.nav_bar .leftpad
-{
-	padding-right: 25px;
-}
-
  .nav_bar a:hover { 
 	
 	background-color: rgb(64,64,64);
+}
+
+.post{
+	background-color: white;
+	padding: 10px 20px;
+	outline: solid;
+	outline-color: black;
+	outline-width: 2px;
+	
+}
+
+#timestamp{
+	margin:0;
+}
+
+#author{
+	margin: 0;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#title{
+	margin: 0;
 }
 
 .container {
