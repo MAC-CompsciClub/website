@@ -17,9 +17,12 @@
 	
 	if (empty($_POST["username"]) && empty($_POST["password"])){
 		
+		echo "<h6 align ='center'>Please enter admin credentials</h6>";
+		
 	} //check if they just loaded page, POST will throw an error since it has no value
 	
 	else{
+		
 		$username = $_POST["username"];
 		$password = $_POST["password"];
 	
@@ -31,12 +34,11 @@
 			die();
 		}
 		else{
-			echo"Incorrect password";
+			echo "<p style = 'color: red;' align = 'center'>Incorrect user/password</p>";
 			$_SESSION['isAdmin'] = false;
 			session_destroy();
 		}
 	}
-	
 	
 ?>
 
@@ -49,7 +51,8 @@
 		  <link rel="stylesheet" href="css/skeleton.css">
 		  <link rel="stylesheet" href="css/custom.css">
 		  <link rel="stylesheet" href="css/font.css">
-		<title>Admin Login</title>
+		  
+		  <title>Admin Login</title>
 	</head>
 	
 	<body>
@@ -57,12 +60,12 @@
 		<h1 >Administrator Login</h1>
 		 <form action="admin_login.php" method="POST">
 			 <p>
-			  <input type="text" name="username" placeholder="Enter username">
+			  <input type="text" name="username" placeholder="Enter username" required>
 			 </p>
 			 
 			 <p>
 			 
-			  <input type="password" name="password" placeholder="Enter password">
+			  <input type="password" name="password" placeholder="Enter password" required>
 			 </p>
 
 	  		<input type="submit" value="LOGIN" />
