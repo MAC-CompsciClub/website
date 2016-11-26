@@ -2,14 +2,9 @@
 body{
 	margin-top: 50px;
 	height: 2000px;
+	margin-left: 0;
 }
 
-  
-#page-container {
-    padding: 20px;
-    margin-top: 30px;
-    height: 2000px;
-}
 .navbar{ 
 	list-style-type: none;
 	margin: 0;
@@ -46,6 +41,7 @@ body{
 }
 
 .post{
+	margin-top: 10px;
 	margin: 50px;
 	background-color: white;
 	padding: 10px 20px;
@@ -54,6 +50,7 @@ body{
 	outline-width: 1px;
 	outline-color: gray;
 	outline-offset: 10px;
+	word-wrap: break-word;
 	
 }
 
