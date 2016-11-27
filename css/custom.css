@@ -1,45 +1,11 @@
-
 body{
 	margin-top: 50px;
-	height: 2000px;
+	height: auto;
 	margin-left: 0;
 }
 
-.navbar{ 
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: rgb(50,50,50);
-	position: fixed;
-	top: 0;
-	width: 100%;
-	white-space:nowrap;
-	
-}
 
-.navbar li{
-	display: inline;
-	float: left;
-	margin: 0;
-
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-   
-    padding: 14px 16px;
-    padding-bottom: 10px;
-    text-decoration: none;
- }
- 
- .navbar a:hover { 
-	
-	background-color: rgb(64,64,64);
-}
-
+/* =========== FRONT PAGE POSTS CSS ========== */
 .post{
 	margin-top: 10px;
 	margin: 50px;
@@ -69,6 +35,98 @@ body{
 }
 
 
+/* ================ NAV-BAR ON ALL PAGES CSS, refer to nav_bar.php ================ */
+.navbar{ 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(50,50,50);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	white-space:nowrap;
+	
+}
+
+.navbar li{
+	display: inline;
+	float: left;
+	margin: 0;
+
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+	padding: 14px 16px;
+    padding-bottom: 10px;
+    text-decoration: none;
+ }
+ 
+ .navbar a:hover { 
+	
+	background-color: rgb(64,64,64);
+}
+
+
+/* ============== ADMIN PAGE TABS CSS ================ */
+
+#adminpanel{
+	background-color: rgb(150,150,150);
+	height: 500px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.admintab{
+	padding-top: 10px;
+	list-style-type: none;
+	background-color: rgb(100,100,100);
+	white-space:nowrap;
+	height: 30px;
+	margin-bottom:5px;
+
+	
+}
+
+.admintab li{
+	display: inline;
+	float: left;
+}
+
+.admintab li a{
+	margin: auto;
+	color: white;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	
+}
+
+.admintab li a:hover{
+	background-color: rgb(150,150,150);
+}
+
+.admintab li a:active{
+	font-size:14px;
+}
+
+.tabcontent {
+    display: none;
+    padding-left: 20px;
+    padding-right: 0px;
+    background-color: white;
+    margin: 10px 10px;
+    overflow: scroll;
+    height: 400px;
+    
+    
+}
+
+/* =========== JACK'S WEIRD CSS ============ */
 .value-prop {
     margin-top: 1rem; 
 }
