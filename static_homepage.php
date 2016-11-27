@@ -1,14 +1,11 @@
 <?php 
 	  
-
-	require("database.php");	
+	require("sql/database.php");	
   
 ?>
 
 
 <?php
-	
-	
 	
 	session_start();
 	
@@ -62,7 +59,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
   <?php  
 	  
-	  include ('nav_bar.php'); 
+	  include ('actions/nav_bar.php'); 
 	  
   ?>
   	<div>
