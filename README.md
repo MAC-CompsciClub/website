@@ -12,20 +12,9 @@
 ---
 
 This is the official repository for the MCC website.
-Please feel free to add/edit whatever you think is right.
 
 ## simple todo stuff
- * Implement dock at the top of the pages, to make navigation between pages easier.
- * the png image for the favicon is too high-quality. Someone change it to a lower resolution. (does this even matter though? oh well, do it any way, lol.)
- * Once we have the official favicon for the website, someone please change it.
-
-
-## points/scribbles about the website
-* should be a news feed on the homepage
-* it should host some small files (docs, newsletters, programming stuff)
-* command line login for admins
-* it should also be fairly modular, so we can add stuff later
-* Idk what else?
+ * Change the favicon in /images/ to something that represents our club. (A logo, once we get it.)
 
 
 ## Main parts of the website - they will be on the main bar of the website
