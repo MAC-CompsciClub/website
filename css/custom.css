@@ -1,22 +1,40 @@
 body{
-	margin-top: 50px;
+	margin-top: 80px;
 	height: auto;
 	margin-left: 0;
+	background-color: #2A3132; /* The background color of all pages */ 
+	
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	color:white;
 }
 
 
 /* =========== FRONT PAGE POSTS CSS ========== */
+body.homepage{
+	background-image: url("https://pixabay.com/get/e83db2062cf4073ecd1f4107e04a4e93e06ae3d111b515439cf5c471/code-1839406.jpg");
+	background-position: center; 
+	background-size: contain;
+}
+
+.header{
+	margin: 15px;
+	padding-top: 15px;
+	margin-bottom: 0px;
+	align-items: center;
+	background-color: rgba(51,107,135,1);
+	padding-bottom: 15px;
+}
+
 .post{
-	margin-top: 10px;
+	margin-top: 15x;
 	margin: 50px;
-	background-color: white;
+	background-color: rgba(0,0,0,0.8); /* Alpha is in decimal values */
 	padding: 10px 20px;
-	outline: solid;
-	outline-color: black;
-	outline-width: 1px;
-	outline-color: gray;
-	outline-offset: 10px;
 	word-wrap: break-word;
+	color: white;
+	
 	
 }
 
@@ -41,7 +59,7 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: rgb(50,50,50);
+	background-color: #336B87;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -67,14 +85,14 @@ body{
  
  .navbar a:hover { 
 	
-	background-color: rgb(64,64,64);
+	background-color: #2A3132;
 }
 
 
 /* ============== ADMIN PAGE TABS CSS ================ */
 
 #adminpanel{
-	background-color: rgb(150,150,150);
+	background-color: rgb(100,100,100);
 	height: 500px;
 	margin-right: 10%;
 	margin-left: 10%;
@@ -86,8 +104,6 @@ body{
 	white-space:nowrap;
 	height: 30px;
 	margin-bottom:5px;
-
-	
 }
 
 .admintab li{

@@ -54,7 +54,7 @@
   </head>
 
   
-<body>
+<body class = "homepage">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
   <?php  
@@ -63,10 +63,10 @@
 	  
   ?>
   	<div>
-        
-        <h1 align="center">Computer Science Club</h1>
+        <div class = "header">
+        <h1 align = "center" >Computer Science Club</h1>
         <h2 align="center" class="docs-header">Welcome to the Computer Science club website for MAC!</h2>
-		
+        </div>
 		<?php
         	$sql = "SELECT POSTID, postTitle, postDate, postAuthor, postBody FROM postdata ORDER BY postDate DESC";
 	
