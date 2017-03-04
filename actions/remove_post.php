@@ -12,6 +12,6 @@
 	}
 	
 	$conn->close();
-	header("Location: ../static_homepage.php");
+	header("Location: ../admin/admin_page.php");
 	die();
 ?>
