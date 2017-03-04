@@ -25,12 +25,15 @@
 		
 		$username = $_POST["username"];
 		$password = $_POST["password"];
-	
-		if ($username == "admin" && $password == "password"){
+		
+		//query new database to verify credentials
+		//query the database from user, admin
+		if ($username == "admin" && $password == "password")
+		{
 			
 			$_SESSION['isAdmin'] = true; //make them an admin
 			
-			header("Location: admin_page.php", true, 301);
+			header("Location: admin_page.php", true, 301); //after they click login, checks and redir
 			die();
 		}
 		else{
@@ -69,7 +72,7 @@
 			  <input type="password" name="password" placeholder="Enter password" required>
 			 </p>
 
-	  		<input type="submit" value="LOGIN" />
+	  		<input class="button-primary" type="submit" value="LOGIN">
 	  	</form>
 		</div>
 	</body>
