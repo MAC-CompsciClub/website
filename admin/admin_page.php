@@ -31,7 +31,7 @@ else
         <h1 align="center">Admin page</h1>
     
         <form align="center"action="admin_logout.php">
-            <input type="submit" value="Logout" />
+            <input class="button-primary" type="submit" value="LOGOUT">
         </form>
         
     </div>
@@ -61,7 +61,7 @@ else
             </tr>
             </thead>
                  
-			<tbody>
+		<tbody>
                 
         <?php
 	        
@@ -105,13 +105,27 @@ else
                 
         ?>
                 
-          </tbody>
+        </tbody>
       </table>
             
      </div>
     
      <div id = "addposts" class = "tabcontent">
-              <p>Add Posts</p>
+		<form action="../actions/new_post.php" method="POST">
+
+		  <label>Title</label>
+		  <input class="u-full-width" name = "ptitle" type="text" id="title">
+		  
+		  <label>Author</label>
+		  <input class="u-full-width" name = "pauthor" type="text" id="author">
+		
+		  <label>Post Body</label>
+		  <textarea class="u-full-width" name = "pbody" id="postbody"></textarea>
+		  
+		  <input class="button-primary" type="submit" value="Submit">
+		  
+		</form>
+			              
      </div>
     
     </div>
