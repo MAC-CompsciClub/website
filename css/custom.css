@@ -92,7 +92,7 @@ body.homepage{
 /* ============== ADMIN PAGE TABS CSS ================ */
 
 #adminpanel{
-	background-color: rgb(100,100,100);
+	background-color: #336B87;
 	height: 500px;
 	margin-right: 10%;
 	margin-left: 10%;
@@ -100,7 +100,7 @@ body.homepage{
 .admintab{
 	padding-top: 10px;
 	list-style-type: none;
-	background-color: rgb(100,100,100);
+	background-color: #336B87;
 	white-space:nowrap;
 	height: 30px;
 	margin-bottom:5px;
@@ -137,10 +137,9 @@ body.homepage{
     background-color: white;
     margin: 10px 10px;
     overflow: scroll;
-    height: 400px;
-    
-    
+    height: 400px;  
 }
+
 
 /* =========== JACK'S WEIRD CSS ============ */
 .value-prop {
