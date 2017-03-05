@@ -6,6 +6,9 @@
 	$author = $_POST["pauthor"];
 	$body = $_POST["pbody"];
 	
+	$title = htmlspecialchars($title, ENT_QUOTES);
+	$author = htmlspecialchars($author, ENT_QUOTES);
+	$body = htmlspecialchars($body, ENT_QUOTES);
 	//$title = mysqli_real_escape_string($title);
 	//$author = mysqli_real_escape_string($author);
 	//$body = mysqli_real_escape_string($body);
