@@ -29,7 +29,7 @@ body.homepage{
 
 .post{
 	margin-top: 15x;
-	margin: 50px;
+	margin: 15px;
 	background-color: rgba(0,0,0,0.2); /* Alpha is in decimal values */
 	padding: 10px 20px;
 	word-wrap: break-word;
