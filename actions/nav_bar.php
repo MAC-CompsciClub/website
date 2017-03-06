@@ -18,7 +18,7 @@
 	<nav>
 		<ul class = "navbar">
 		<li><a href = "/website/static_homepage.php">Home</a></li>
-		<li><a href = "/website/resource_page/resources.php">Resources</a></li>
+		<li><a href = "/website/resources_page/resources.php">Resources</a></li>
 				
 			<?php if (!isset($_SESSION['isAdmin']))
 				{
