@@ -29,7 +29,7 @@ body.homepage{
 
 .post{
 	margin-top: 15x;
-	margin: 15px;
+	margin: 50px;
 	background-color: rgba(0,0,0,0.2); /* Alpha is in decimal values */
 	padding: 10px 20px;
 	word-wrap: break-word;
@@ -140,6 +140,43 @@ body.homepage{
     height: 400px;  
 }
 
+/* ============== RESOURCES PAGE TABS CSS ================ */
+
+#resourcespanel{
+	background-color: #000000;
+	margin-top: -2%;
+	width: 300px;
+	height: 1000px;
+	float: left;	
+}
+
+.resourcestabs li a{
+	margin-top: 100px;
+	color: white;
+	padding-top:5px;
+	padding-bottom: 5px;
+	align-content: center;
+	text-decoration: none;
+	width: 100%;
+	
+}
+
+.resourcestabs li a:hover{
+	background-color: rgb(150,150,150);
+}
+
+.tabcontent2{
+	display: none;
+	background-color: #b9b9b9;
+    float: left;
+    margin-top: -2%;
+    margin-left: 1%;
+    padding: 10px;
+    width: 70%;
+    height: 1000px;
+    overflow: scroll;
+	
+}
 
 /* =========== JACK'S WEIRD CSS ============ */
 .value-prop {
