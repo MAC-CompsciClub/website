@@ -48,18 +48,36 @@
 <!DOCTYPE html>
 
 <html lang = "en">
+
+<head>
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>Admin Login</title>
+<meta name="description" content="This is the main page for the Macdonald Computer Science Club.">
+<meta name="author" content="Jack Wang + Hamza Saleem & The Compsci Club">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/font.css">
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+
 	
-	<head>
-		  <link rel="stylesheet" href="../css/normalize.css">
-		  <link rel="stylesheet" href="../css/skeleton.css">
-		  <link rel="stylesheet" href="../css/custom.css">
-		  <link rel="stylesheet" href="../css/font.css">
-		  <link rel="icon" type="image/png" href="images/favicon.png">
-		  
-		  <title>Admin Login</title>
-	</head>
-	
-	<body>
+      	<body>
 		<div align="center">
 		<h1 >Administrator Login</h1>
 		 <form action="admin_login.php" method="POST">

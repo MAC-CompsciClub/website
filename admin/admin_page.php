@@ -18,11 +18,33 @@ else
 <html lang = "en">
 <?php include '../actions/nav_bar.php'; ?>
 
+
 <head>
-    <title>Welcome to the admin page</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <script src="../js/adminpage_tabs.js"></script>
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>Admin Page</title>
+<meta name="description" content="This is the admin page for the Macdonald Computer Science Club.">
+<meta name="author" content="Jack Wang + Hamza Saleem & The Compsci Club">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/font.css">
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
+
 
 <body>
 
