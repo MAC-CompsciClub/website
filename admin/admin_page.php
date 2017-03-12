@@ -13,6 +13,7 @@ else
     die();
 }
 ?>
+
 <!DOCTYPE html>
 
 <html lang = "en">
@@ -42,7 +43,7 @@ else
 <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="icon" type="image/png" href="images/favicon.png">
-
+<script src="../js/adminpage_tabs.js"></script>
 </head>
 
 
