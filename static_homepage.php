@@ -1,7 +1,8 @@
 <?php 
   
 require("sql/database.php");	
-
+require_once 'libs/parsedown/Parsedown.php';
+$parsedown = new Parsedown();
 ?>
 
 
@@ -61,8 +62,7 @@ else
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
 <?php  
   
-  include ('actions/nav_bar.php'); 
-  
+  include ('actions/nav_bar.php');   
 ?>
 	<div>
     <div class = "header">
@@ -71,7 +71,7 @@ else
     </div>
 	<?php	
 		include ("actions/access_posts.php");
-			
+
 		if (count($posts) > 0)
 		{	
 			for ($i = 0; $i < count($posts); $i++)
@@ -82,7 +82,8 @@ else
 				$timestamp = $posts[$i][1];
 				$author = $posts[$i][2];
 				$body = $posts[$i][3];
-			
+                $body = $parsedown->text($body);
+                
 				echo "
 				<div id = $postid class = 'post'>
 					<h6 id = 'timestamp' align='right'>$timestamp</h6>
@@ -92,12 +93,12 @@ else
 					<br>$postid</br>
 				</div>
 				";
-			   }
-		
-				
-			}
-			else{
+                }
+        }
+		else
+            {
 				echo "<h5 align = 'center'>No posts</h5>";
+                echo $parsedown->text('#Hello world');
 			}
     	
 	?>
