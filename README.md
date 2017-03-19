@@ -8,29 +8,19 @@
 ```
 
 # Macdonald Computer Science Club Website
-
----
-
 This is the official repository for the MCC website.
 
-## simple todo stuff
- * Change the favicon in /images/ to something that represents our club. (A logo, once we get it.)
+Homepage:
+![ScreenShot](https://i.gyazo.com/7e0f7dc50fcfc97fbb27703654e68db5.png)
+
+## Todo
+* Implement a way to edit exhisting posts. I'm tired of editing from phpmyadmin. -Jack
+* Set up SFPT and a *Downloads* page.
+* Find a way to automatically email/messenger user accounts after a new post has been made.
+* Allow users to create a (non-admin) account. This will give them access to Downloads and whatnot.
+* FIX THE RESOURCES PAGE!
+* Clean up the mess which is our CSS.
+* Fix our "security issues".
 
 
-## Main parts of the website - they will be on the main bar of the website
-* title page with the logo and newsfeed
-* Downloads page
-* Maybe a showcase page where we include projects made by user with a description...
-* news page
-* info/faq page(s)
-* ~~~ adding new pages should be easy
-
-
-## On post/news
-* All posts will have their own file. All posts files will be in a specific Post directory. This will make it easier to add/remove files with command line later on.
-* All posts should have some metadata (title, title-image, date) associated with the file. This will allow the program which generates the title page to read and generate the correct title page info.
-* Posts should be able to properly display images, text and whatnot.....
-
-### Please give your own input on what the website should have, and correct me if i said something stupid lolol.
-
-### Decide on a style for the website...
+Please feel free to contribute!
